@@ -14,7 +14,7 @@ interface CategoryDao {
     fun selectAll():LiveData<List<Category>>
 
     @Query("SELECT * FROM Category WHERE id = :id")
-    fun getCategory(id:Int)
+    fun getCategory(id:Int):LiveData<Category>
 
     @Update
     fun updateCategory(category: Category)

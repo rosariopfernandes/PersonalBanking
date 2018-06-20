@@ -1,10 +1,17 @@
 package io.github.rosariopfernandes.personalbanking.model
 
 import android.arch.persistence.room.Entity
+import android.arch.persistence.room.Ignore
 import android.arch.persistence.room.PrimaryKey
 
 /**
  * Created by rosariopfernandes on 3/20/18.
  */
 @Entity
-data class Category(@PrimaryKey(autoGenerate = true)var id:Int, var name:String)
+data class Category(@PrimaryKey(autoGenerate = true) var id:Int?, var name:String)
+{
+    constructor():this(null,"")
+
+    @Ignore
+    constructor(name:String):this(null, name)
+}
