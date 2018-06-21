@@ -17,8 +17,13 @@
     <string name="title_activity_main">Transactions</string>
     <string name="title_activity_new_transaction">New Transaction</string>
     <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_sources">Sources</string>
 
     <string name="new_category">New Category</string>
     <string name="hint_category_name">Category Name</string>
     <string name="new_category_confirmation">Category Added</string>
+
+    <string name="new_source">New Source</string>
+    <string name="hint_source_name">Category Name</string>
+    <string name="new_source_confirmation">Source Added</string>
 </resources>

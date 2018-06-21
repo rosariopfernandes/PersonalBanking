@@ -11,12 +11,12 @@ import io.github.rosariopfernandes.personalbanking.dao.TransactionDao
 import io.github.rosariopfernandes.personalbanking.model.Category
 import io.github.rosariopfernandes.personalbanking.model.Source
 
-@Database(entities = arrayOf(Category::class/*, Source::class, Transaction::class*/), version = 1)
+@Database(entities = arrayOf(Category::class, Source::class/*, Transaction::class*/), version = 1)
 abstract class BankingDatabase : RoomDatabase() {
 
     abstract fun categoryDao():CategoryDao
-    /*abstract fun sourceDao(): SourceDao
-    abstract fun transactionDao():TransactionDao*/
+    abstract fun sourceDao(): SourceDao
+    //abstract fun transactionDao():TransactionDao
 
     companion object {
         private var INSTANCE: BankingDatabase? = null

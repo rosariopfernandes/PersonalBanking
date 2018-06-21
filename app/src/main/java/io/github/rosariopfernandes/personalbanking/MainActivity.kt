@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         when(item!!.itemId){
             R.id.action_categories ->
                     startActivity(Intent(this, CategoriesActivity::class.java))
+            R.id.action_sources ->
+                startActivity(Intent(this, SourcesActivity::class.java))
         }
         return true
     }
